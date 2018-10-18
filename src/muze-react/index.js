@@ -16,15 +16,14 @@ export default class Muze extends Component{
     }
 
     createChart = () => {
-        console.log(this.state)
         const env = muze();
         const canvas = env.canvas();
         canvas
             .data(this.state.datamodel)
             .rows(this.state.rows) 
             .columns(this.state.columns)
-            .width(600)
-            .height(600)
+            .width(this.mountRef.current.parentElement.clientWidth)
+            .height(this.mountRef.current.parentElement.clientHeight)
             .layers([{
                 'mark' : this.state.chartType
             }]) 
@@ -32,6 +31,7 @@ export default class Muze extends Component{
     }
     
     componentDidMount = () => {
+        console.log(this.mountRef.current.parentElement)
         this.createChart()
     }
 

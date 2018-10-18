@@ -10,14 +10,18 @@ class App extends Component {
     super()
     const DataModel = muze.DataModel;
     this.dataModel = new DataModel(data,schema);
-    this.chartType = 'line'
+    this.chartType = 'area'
     this.rows = ['Horsepower']
     this.columns = ['Cylinders']
+    this.style = {
+      height : 400,
+      width : 600
+    }
   }
   
   render() {
     return (
-      <div>
+      <div style={this.style}>
         <Muze 
             chartType = {this.chartType}
             dataModel = {this.dataModel}
