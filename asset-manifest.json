@@ -1,15 +1,15 @@
 {
-  "main.css": "/react-muze/static/css/main.95b1d38a.chunk.css",
-  "main.js": "/react-muze/static/js/main.829491ad.chunk.js",
-  "main.js.map": "/react-muze/static/js/main.829491ad.chunk.js.map",
+  "main.css": "/react-muze/static/css/main.63f1441e.chunk.css",
+  "main.js": "/react-muze/static/js/main.9a149185.chunk.js",
+  "main.js.map": "/react-muze/static/js/main.9a149185.chunk.js.map",
   "static/css/1.4ec6a1fc.chunk.css": "/react-muze/static/css/1.4ec6a1fc.chunk.css",
   "static/js/1.0b903c68.chunk.js": "/react-muze/static/js/1.0b903c68.chunk.js",
   "static/js/1.0b903c68.chunk.js.map": "/react-muze/static/js/1.0b903c68.chunk.js.map",
   "runtime~main.js": "/react-muze/static/js/runtime~main.fff264b1.js",
   "runtime~main.js.map": "/react-muze/static/js/runtime~main.fff264b1.js.map",
   "static/css/1.4ec6a1fc.chunk.css.map": "/react-muze/static/css/1.4ec6a1fc.chunk.css.map",
-  "static/css/main.95b1d38a.chunk.css.map": "/react-muze/static/css/main.95b1d38a.chunk.css.map",
+  "static/css/main.63f1441e.chunk.css.map": "/react-muze/static/css/main.63f1441e.chunk.css.map",
   "index.html": "/react-muze/index.html",
-  "precache-manifest.cbb97192460e3f3ca392e8c680e4fc68.js": "/react-muze/precache-manifest.cbb97192460e3f3ca392e8c680e4fc68.js",
+  "precache-manifest.3e17f52ac8e431b6fad4a6ca936603e9.js": "/react-muze/precache-manifest.3e17f52ac8e431b6fad4a6ca936603e9.js",
   "service-worker.js": "/react-muze/service-worker.js"
 }
