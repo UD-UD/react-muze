@@ -13,7 +13,7 @@ class App extends Component {
     }
     const DataModel = muze.DataModel;
     this.dataModel = new DataModel(data,schema);
-    this.rows = ['Horsepower']
+    this.rows = ['Acceleration']
     this.columns = ['Cylinders']
     this.style = {
       height : 400,

@@ -14,7 +14,15 @@ export default class Muze extends Component{
             chartType : props.chartType || 'bar'
         }
         this.mountRef = React.createRef()
-        console.log(props.chartType)
+    }
+
+    componentDidUpdate(prevProps, prevState) {
+        if(this.props.chartType !== prevState.chartType){
+            this.setState({
+                chartType:this.props.chartType
+            })
+            this.createChart()
+        }
     }
 
     createChart = () => {
