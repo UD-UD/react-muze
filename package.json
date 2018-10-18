@@ -17,6 +17,7 @@
   "eslintConfig": {
     "extends": "react-app"
   },
+  "homepage" : "https://ud-ud.github.io/react-muze/",
   "browserslist": [
     ">0.2%",
     "not dead",

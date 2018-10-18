@@ -14,7 +14,7 @@ class App extends Component {
     const DataModel = muze.DataModel;
     this.dataModel = new DataModel(data,schema);
     this.rows = ['Acceleration']
-    this.columns = ['Cylinders']
+    this.columns = ['Year']
     this.style = {
       height : 400,
       width : 600
@@ -42,7 +42,7 @@ class App extends Component {
           </Muze>
         </div>
         <div>
-          <input placeholder="Chart Type" ref={this.inputRef} type="text"/>
+          <input placeholder="Chart Type : line | area | bar | point" ref={this.inputRef} type="text"/>
           <button onClick={this.handleClick}>Update</button>
         </div>
       </div>
