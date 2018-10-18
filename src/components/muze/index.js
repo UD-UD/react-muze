@@ -5,7 +5,6 @@ import React,{Component} from 'react'
 export default class Muze extends Component{
     constructor(props){
         super(props)
-        console.log(props)
         this.state = {
             rows : props.rows,
             columns : props.columns,
@@ -42,7 +41,6 @@ export default class Muze extends Component{
     }
     
     componentDidMount = () => {
-        console.log(this.mountRef.current.parentElement)
         this.createChart()
     }
 

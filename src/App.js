@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import muze from 'muze'
-import Muze from './muze-react'
+import Muze from './components/muze/index'
 import './App.css';
 const data = require('./cars.json')
 const schema = require('./cars-schema.json')
