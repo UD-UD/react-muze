@@ -5,6 +5,7 @@ import React,{Component} from 'react'
 export default class Muze extends Component{
     constructor(props){
         super(props)
+        console.log(props)
         this.state = {
             rows : props.rows,
             columns : props.columns,
@@ -13,6 +14,7 @@ export default class Muze extends Component{
             chartType : props.chartType || 'bar'
         }
         this.mountRef = React.createRef()
+        console.log(props.chartType)
     }
 
     createChart = () => {
@@ -26,7 +28,8 @@ export default class Muze extends Component{
             .height(this.mountRef.current.parentElement.clientHeight)
             .layers([{
                 'mark' : this.state.chartType
-            }]) 
+            }])
+            .color('Origin') 
             .mount(this.mountRef.current)
     }
     

@@ -6,28 +6,45 @@ const data = require('./cars.json')
 const schema = require('./cars-schema.json')
 class App extends Component {
   
-  constructor(){
-    super()
+  constructor(props){
+    super(props)
+    this.state = {
+      chartType : 'bar'
+    }
     const DataModel = muze.DataModel;
     this.dataModel = new DataModel(data,schema);
-    this.chartType = 'area'
     this.rows = ['Horsepower']
     this.columns = ['Cylinders']
     this.style = {
       height : 400,
       width : 600
     }
+    this.inputRef = React.createRef()
+  }
+
+
+  handleClick = () =>{
+    this.setState({
+      chartType : this.inputRef.current.value
+    })
   }
   
   render() {
     return (
-      <div style={this.style}>
-        <Muze 
-            chartType = {this.chartType}
-            dataModel = {this.dataModel}
-            rows = {this.rows}
-            columns = {this.columns}
-            ></Muze>
+      <div className="container">
+        <div className="nav">React-Muze</div>
+        <div className="muze-holder" style={this.style}>
+          <Muze 
+              chartType = {this.state.chartType}
+              dataModel = {this.dataModel}
+              rows = {this.rows}
+              columns = {this.columns}>
+          </Muze>
+        </div>
+        <div>
+          <input placeholder="Chart Type" ref={this.inputRef} type="text"/>
+          <button onClick={this.handleClick}>Update</button>
+        </div>
       </div>
     )
       
