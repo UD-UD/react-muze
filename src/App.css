@@ -23,6 +23,9 @@ input{
 button{
   margin-left : 20px;
   height: 50px;
-  width: 200px;
   font-size: 1em;
+  background: #8ad7fb;
+  border: 2px solid white;
+  width: 120px
+
 }
